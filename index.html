@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тренажёр МЦКО — Физическая культура</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar container">
+    <div>
+      <h1>Тренажёр МЦКО</h1>
+      <p class="subtitle">Физическая культура</p>
+    </div>
+    <div class="topbar-actions">
+      <button id="goHomeBtn" class="ghost small">Главная</button>
+      <button id="goTrainerBtn" class="ghost small">Тренажёр</button>
+      <button id="goStatsBtn" class="ghost small">Статистика</button>
+      <button id="themeToggleBtn" class="ghost small">Тёмная тема</button>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <template id="loaderTpl">
+    <section class="card centered">
+      <p>Загрузка данных...</p>
+    </section>
+  </template>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
